@@ -31,7 +31,8 @@
     "commitmsg": "validate-commit-msg",
     "commit": "git-cz",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --open",
+    "watch": "webpack --progress --watch"
   },
   "config": {
     "validate-commit-msg": {},
