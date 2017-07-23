@@ -3,18 +3,35 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "^2.4.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
   "devDependencies": {
+    "@types/core-js": "^0.9.42",
+    "@types/jest": "^20.0.4",
+    "@types/react": "^15.0.38",
+    "@types/react-dom": "^15.5.1",
+    "awesome-typescript-loader": "^3.2.1",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
+    "html-webpack-plugin": "^2.29.0",
     "husky": "^0.14.3",
-    "validate-commit-msg": "^2.13.1"
+    "jest": "^20.0.4",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.4.2",
+    "validate-commit-msg": "^2.13.1",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepush": "npm test",
     "commitmsg": "validate-commit-msg",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "config": {
     "validate-commit-msg": {},
