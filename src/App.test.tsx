@@ -4,5 +4,5 @@ import { App } from './App';
 
 test('renders withour crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App compiler="TypeScript" framework="React"/>, div);
+  ReactDOM.render(<App />, div);
 });

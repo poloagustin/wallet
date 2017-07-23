@@ -4,8 +4,19 @@ module.exports = {
   entry: __dirname + '/src/index.tsx',
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: "awesome-typescript-loader", exclude: /\.test\.tsx|\.test/ },
-      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+      {
+        test: /\.tsx?$/,
+        loaders: [
+          "awesome-typescript-loader",
+          "tslint-loader"
+        ],
+        exclude: /\.test\.tsx|\.test/
+      },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader"
+      }
     ]
   },
   resolve: {

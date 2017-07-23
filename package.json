@@ -20,18 +20,21 @@
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "source-map-loader": "^0.2.1",
+    "tslint": "^5.5.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-react": "^3.0.0",
     "typescript": "^2.4.2",
     "validate-commit-msg": "^2.13.1",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.6.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepush": "npm test",
-    "commitmsg": "validate-commit-msg",
-    "commit": "git-cz",
     "build": "webpack",
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg",
+    "prepush": "npm test",
     "start": "webpack-dev-server --open",
+    "test": "",
     "watch": "webpack --progress --watch"
   },
   "config": {
